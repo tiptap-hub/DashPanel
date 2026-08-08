@@ -8048,7 +8048,7 @@ function showCouponModal(coupon, phone, onCloseCallback = null) {
     document.getElementById("couponModalDays").textContent = `صالح لمدة ${coupon.days} يوم (مسموح بـ ${coupon.maxUses} استعمالات)`;
     document.getElementById("couponModalQuestion").textContent = `حصل العميل "${coupon.customer}" على كود خصم، هل تود إخباره؟`;
 
-    let msg = `مرحباً ${coupon.customer}\nحصلت على كود خصم ${coupon.percentage}% على أي خدمة بتختارها من خدماتنا\nصلاحية كود الخصم: ${coupon.days} يوم\nمرات الاستخدام المسموحة: ${coupon.maxUses} مرات\nكود الخصم: ${coupon.code}\nبتقدر تتصفح جميع خدماتنا من موقعنا الإلكتروني\nhttps://megastore1023.netlify.app/`;
+    let msg = `مرحباً ${coupon.customer}\nحصلت على كود خصم ${coupon.percentage}% على أي خدمة بتختارها من خدماتنا\nصلاحية كود الخصم: ${coupon.days} يوم\nمرات الاستخدام المسموحة: ${coupon.maxUses} مرات\nكود الخصم: ${coupon.code}\nبتقدر تتصفح جميع خدماتنا من موقع تيب تاب\nhttps://tiptap-hub.github.io/orders/`;
     let cleanPhone = (phone || '').replace(/\D/g, '');
     let waLink = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(msg)}`;
     let waBtn = document.getElementById("couponWhatsAppBtn");
